@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ember Client</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="https://kit.fontawesome.com/e84972cf79.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="login invisible">
+			<h1 class="title">Log In</h1>
+			<h2 class="subtitle">To play Minecraft, you need to log in.</h2>
+			<br/>
+			<br/>
+			<div class="login-box">
+				<button class="button login-button microsoft-login-button">Microsoft Account</button>
+				<br/>
+				<button class="button login-button mojang-login-button">Mojang Account</button>
+			</div>
+		</div>
+		<div class="mojang-login invisible">
+			<button class="button back-button back-to-login-button">◀</button>
+			<h1 class="title login-title">Log In</h1>
+			<br/>
+			<br/>
+			<div class="login-box">
+				<label for="username" class="label">Email</label>
+				<input id="username" class="input" type="username" spellcheck="false" autocomplete="off"></input>
+				<label for="username" class="label">Password</label>
+				<input id="password" class="input" type="password"></input>
+				<br/>
+			</div>
+			<span class="error-message"></span>
+			<button class="button play-button login-button-mojang">Log In</button>
+		</div>
+		<div class="main invisible">
+		<ul>
+			<li><button class="about-tab selected-tab">Home</button></li>
+			<li><div class="sep"></div></li>
+			<li><button class="settings-tab">Settings</button></li>
+			<li style="float:right"><p class="active">Ember Client</p></li>
+		</ul>
+		  <div class="settings invisible">
+			<br/>
+			<div class="centred">
+				<input type="checkbox" class="optifine" id="optifine"/>
+				<label for="optifine" style="cursor: pointer;"  class="spaced-5">Install OptiFine</label>
+			</div>
+			<br/>
+			<div class="centred">
+				<input type="checkbox" class="discord" id="discord"/>
+				<label for="discord" style="cursor: pointer;"  class="spaced-5">Enable Discord RPC</label>
+			</div>
+			<br/>
+			<div class="memory-box">
+				<p>Allocate RAM</p>
+				<input type="range" class="memory">
+				<p class="memory-label"></p>
+			</div>
+			<br/>
+			<br/>
+			<div>
+				<span class="centred">Minecraft Folder</span>
+				<br/>
+				<span class="centred spaced-15 minecraft-folder-path"></span>
+				<br/>
+				<button class="centred button button-generic minecraft-folder spaced-15">Change</button>
+			</div>
+			<br/>
+			<br/>
+			<br/>
+			<div class="centred">
+				<button class="button button-generic devtools">Open Developer Tools</button>
+			</div>
+			<br/>
+		</div>
+			<div class="server-box">
+			<h3 class="centred-text quick-join-text">Server List</h3>
+			<div class="quick-servers centred"></div>
+			<div class="button-box">
+			<button class="button play-button" id="launch-button">Launch</button>
+			</div>
+		</div>
+		<div class="container-pic">
+			<img class="container-image" src="https://wallpapercave.com/dwp1x/gEPOrzw.jpg">
+			<div class="social-box"></div>
+		</div>
+			<button class="account-button">
+			<img class="account-image" src="https://crafatar.com/avatars/"></img>
+			</button>
+			<div class="about">
+			</div>
+			<p class="invisible" id="launch-note">The first launch will take a few moments</p>
+		<ul class="ul-2">
+			<li><p class="text">Report a problem</p></li>
+			<li><div class="sep"></div></li>
+			<li><p class="text-2">Support</p></li>
+			<li style="float:right"><p class="active-2">Ember Client</p></li>
+		</ul>
+		</div>
+	</body>
+</html>
