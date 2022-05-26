@@ -29,6 +29,13 @@ public class MixinRenderChunk {
 		}
 
 		instance.deleteGlBuffers();
+		if(Util.getOSType() == EnumOS.LINUX
+				&& Minecraft.getMinecraft().gameSettings.useVbo
+				&& Tweaker.optiFine) {
+			return;
+		}
+
+		instance.deleteGlBuffers();
 	}
 
 	@Inject(method = "setPosition", at = @At("RETURN"))

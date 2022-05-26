@@ -190,7 +190,7 @@ window.addEventListener("DOMContentLoaded", () => {
 					};
 
 					serverElement.onmouseout = () => {
-						serverText.innerText = "Server List";
+						serverText.innerText = "Direct Connect";
 					};
 
 					serverElement.onclick = () => {

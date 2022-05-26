@@ -11,7 +11,7 @@
 :root {
 	--primary-colour: rgb(0, 132, 255);
 	--primary-colour-lighter: rgb(0, 153, 255);
-	--primary-colour-darker: rgb(129, 41, 41);
+	--primary-colour-darker: rgb(0, 110, 255);
 }
 
 .input {
@@ -51,6 +51,12 @@
 	text-align: center;
 }
 
+.centred-text {
+	background-color: #333;
+	border-radius: 5px;
+	box-shadow: 0 4px 4px 0px rgba(0,0,0,0.15), 0 6px 8px 6px rgba(0,0,0,0.10);
+}
+
 .title, h1, h2, h3, h4, h5, h6 {
 	font-weight: normal;
 }
@@ -78,6 +84,9 @@
 }
 
 .play-button {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	top: 200px;
 	margin: 0 auto;
 	left: calc(25% - 125px);
@@ -91,6 +100,9 @@
 }
 
 .play-button, .login-button {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	background: rgb(0, 132, 255);
 	border-radius: 5px;
 	width: 230px;
@@ -99,6 +111,9 @@
 }
 
 .login-button-mojang {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	margin-left: 280px;
 	margin-top: 30px;
 	background: rgb(0, 132, 255);
@@ -121,6 +136,9 @@
 }
 
 .login-button {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	width: 350px;
 	display: block;
 	font-size: 2em;
@@ -177,6 +195,9 @@ a:link:hover, a:link:focus, a:link:active {
 }
 
 .tabs button {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	display: inline;
 	background: none;
 	border: none;
@@ -184,7 +205,6 @@ a:link:hover, a:link:focus, a:link:active {
   	text-decoration: none;
 	height: 100%;
 	color: white;
-	transition: width 0.2s;
 	border-radius: 100px;
 	cursor: pointer;
 }
@@ -253,7 +273,9 @@ input[type="range"]::-webkit-slider-thumb {
 	width: 15px;
 	border-radius: 100%;
 	background: var(--primary-colour);
-	transition: width 0.2s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 }
 
 input[type="range"]:hover::-webkit-slider-thumb {
@@ -275,9 +297,12 @@ input[type="range"]:hover::-webkit-slider-thumb {
 }
 
 .button-generic {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	background: var(--primary-colour);
 	border-radius: 5px;
-	color: black;
+	color: white;
 }
 
 .button-generic:hover {
@@ -402,6 +427,9 @@ ul {
   }
 
   li button {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	border: none;
 	display: block;
 	color: white;
